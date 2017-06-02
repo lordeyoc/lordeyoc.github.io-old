@@ -109,7 +109,7 @@
 		
         $(window).load(function(){
         $(".typing").typed({
-            strings: ["PERFECT PLACES"],
+            strings: ["THIS IS MELODRAMA"],
             typeSpeed: 250
           });
          });
