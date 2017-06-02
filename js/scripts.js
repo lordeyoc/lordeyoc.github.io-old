@@ -109,7 +109,7 @@
 		
         $(window).load(function(){
         $(".typing").typed({
-            strings: ["THIS IS MELODRAMA"],
+            strings: ["THIS IS <em>MELODRAMA</em>"],
             typeSpeed: 250
           });
          });
