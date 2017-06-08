@@ -1487,11 +1487,11 @@ ul.portfolio li.active {
     vertical-align: middle;
 }
 
-.header-text a{
+.header-text-rosette a{
 	color: #fff;
 }
 
-.header-text a:hover{
+.header-text-rosette a:hover{
 	color: rgba(255,255,255,.3);
 	-webkit-transition: border-color .15s ease-out,color .15s ease-out;
     transition: border-color .15s ease-out,color .15s ease-out;
