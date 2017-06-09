@@ -238,11 +238,19 @@ fieldset {
     left: 0;
     height: 100%;
     width: 100%;
-    background: ../images/bg/perfect_places.jpg;
+    background: url(http://buzzbands.s3.amazonaws.com/wp-content/uploads/2017/04/17134405/lorde-rogerho-1.jpg);
+	background-size: cover;
     z-index: 999;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: all .75s ease;
+    -moz-transition: all .75s ease;
+    transition: all .75s ease;
+}
+
+#preloader-soft {
+	position: absolute;
+	background: #000;
+	
+    opacity : 0.7;
 }
 
 body.loaded #preloader{
@@ -331,10 +339,11 @@ body.loaded #preloader{
     position: relative;
     height: 100%;
     /* background: url(../images/bg/perfect_places.jpg); */
-	background-image: url(../images/bg/perfect_places.jpg);
+	background-image: url(http://buzzbands.s3.amazonaws.com/wp-content/uploads/2017/04/17134405/lorde-rogerho-1.jpg);
     background-size: cover;
 	background-position:center top;
     background-repeat: no-repeat;
+	margin:-50px auto 0 auto;
     z-index: 1;
 }
 
@@ -360,20 +369,40 @@ body.loaded #preloader{
     vertical-align: middle;
 }
 
-.header-text {}
+.header-text p {
+	display: inline;
+	-webkit-transition: border-color .15s ease-out,color .15s ease-out;
+    transition: border-color .15s ease-out,color .15s ease-out;
+}
+
+.header-text p:hover{
+	color: #ce0861;
+	-webkit-transition: border-color .15s ease-out,color .15s ease-out;
+    transition: border-color .15s ease-out,color .15s ease-out;
+}
+
 
 .home-section-background h2 {
     color: #f8f8f8;
     font-size: 50px;
-    letter-spacing: .2em;
+    letter-spacing: .3em;
+	text-transform: uppercase;
     margin: 0;
 }
 
 .home-section-background p {
     color: #f8f8f8;
     letter-spacing: 4px;
-    font-size: 15px;
+    font-size: 35px;
 	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.home-section-background .header-2 p {
+    color: #f8f8f8;
+    letter-spacing: 4px;
+    font-size: 10px;
+	margin-top: 0px;
 	margin-bottom: 20px;
 }
 
@@ -414,8 +443,6 @@ body.loaded #preloader{
 
 .logo {
     padding-top: 28px;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
 }
 
 .logo a {
@@ -424,18 +451,77 @@ body.loaded #preloader{
     text-transform: uppercase;
     letter-spacing: 6px;
     font-weight: 900;
-    font-size: 14px;
+    font-size: 24px;
+}
+
+/* .logo a:hover {
+	-webkit-animation:rainbow 9s infinite;
+	-ms-animation:rainbow 9s infinite;
+	-o-animation:rainbow 9s infinite;
+	animation:rainbow 9s infinite;
+} */
+@-webkit-keyframes rainbow {
+0% {color: #fff;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #fff;}
+}
+@-ms-keyframes rainbow {
+0% {color: #fff;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #fff;}
+}
+@-o-keyframes rainbow {
+0% {color: #fff;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #fff;}
+}
+@keyframes rainbow {
+0% {color: #fff;}
+10% {color: #ff8000;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #0000ff;}
+90% {color: #8000ff;}
+100% {color: #fff;}
 }
 
 .navigation-menu .navbar-nav li a {
     color: #fff;
     text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 1px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
     padding: 30px 15px;
     -webkit-transition: .3s;
     transition: .3s;
-    font-weight: 600;
+    
 }
 
 .navigation-menu .navbar-nav li a:hover {
@@ -969,7 +1055,6 @@ ul.portfolio li.active {
 }
 
 
-
 /* Responsive */
 
 @media only screen and (min-width: 767px) and (max-width: 991px) {
@@ -1459,7 +1544,16 @@ ul.portfolio li.active {
 
 /* UiPasta Credit */
 
-.uipasta-credit {
+.uipasta-credit #lorde-melodrama {
+	color: #00c5cd;
+	-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.uipasta-credit #lorde-melodrama:hover {
+	color: #ce0861;
+	-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .uipasta-credit a {
@@ -1471,8 +1565,8 @@ ul.portfolio li.active {
     color: #0a0a0a;
 }
 
-
 .rosette {
+	padding-top: 25px;
 	background: #000;
 }
 
@@ -1487,14 +1581,16 @@ ul.portfolio li.active {
     vertical-align: middle;
 }
 
-.header-text-rosette a{
+.header-text-rosette a {
 	color: #fff;
+	-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .header-text-rosette a:hover{
 	color: rgba(255,255,255,.3);
-	-webkit-transition: border-color .15s ease-out,color .15s ease-out;
-    transition: border-color .15s ease-out,color .15s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .rosette h1 {
@@ -1512,6 +1608,8 @@ ul.portfolio li.active {
 	font-weight: 800;
 	font-size: 18px;
 	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .rosette span:hover {
