@@ -33,6 +33,7 @@
 
 (function ($) {
     'use strict';
+	var cDown;
 
     jQuery(document).ready(function () {
 
@@ -103,13 +104,24 @@
 	    });
 		
 		
+		/* Countdown */
+		 function CountDownFrom(mm,dd){
+			if(mm <= 12 && mm >0){
+				var today = new Date();
+				var CountingDate = new Date(today.getFullYear(),mm-1,dd);
+				var countDown = Math.ceil((CountingDate-today) / (1000*60*60*24));
+				
+				cDown = countDown;
+				//document.getElementById("remain").innerHTML = (countDown);
+				}
+			}
 		
+		CountDownFrom(9,26);
 		
-        /* Typed.js */
-		
-        $(window).load(function(){
+        /* Typed.js */		
+		$(window).load(function(){
         $(".typing").typed({
-            strings: ["THIS IS <em>MELODRAMA</em>"],
+            strings: [cDown + " days left"],
             typeSpeed: 250
           });
          });
