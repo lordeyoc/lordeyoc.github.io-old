@@ -190,6 +190,8 @@ fieldset {
 	border: 3px solid #fff;
 	color: #fff;
 	overflow: hidden;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 
 .button-style:hover,
@@ -352,6 +354,8 @@ body {
 
 .home-section-background {
 	position: relative;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 
 .home-section-background:after {
@@ -395,6 +399,8 @@ body {
     letter-spacing: .3em;
 	text-transform: uppercase;
     margin: 0;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 
 .home-section-background p {
@@ -403,6 +409,8 @@ body {
     font-size: 35px;
 	margin-top: 40px;
 	margin-bottom: 20px;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 
 .home-section-background .header-2 p {
@@ -411,6 +419,8 @@ body {
     font-size: 10px;
 	margin-top: 0px;
 	margin-bottom: 20px;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 
 .typed-cursor{
@@ -1140,12 +1150,29 @@ ul.portfolio li.active {
     }
     .home-section-background {
         padding-top: 120px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
     }
+	.home-section-background p {
+		font-size: 30px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}	
+	 .header-text-rosette a {
+		font-size: 14px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
     .home-section-background h2 {
-        font-size: 22px;
+        font-size: 38px;
+		font-weight: 600;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
     }
     .section-title h2 {
         font-size: 22px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
     }
     .testimonial-word {
         padding: 0;
@@ -1171,30 +1198,48 @@ ul.portfolio li.active {
          width: 40px;
          height: 40px;
          line-height: 40px;
-         font-size: 20px;
+         font-size: 20px; 
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
       }
 	  
      .section-title h2 {
-         font-size: 16px;
+         font-size: 16px;		 
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
        }
 	   
       .section-title h2 {
          font-weight: 500;
          width: 200px;
-     }
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+		 }
 	 
       .section-title p {
          font-weight: 300;
          font-size: 12px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
       }
 	  
      .home-section-background h2 {
-         font-size: 18px;
+         font-size: 32px;
+		 font-weight: 600;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
       }
 	  
      .home-section-background p {
-         font-size: 12px;
-      }
+         font-size: 28px;				
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	 }
+	  .header-text-rosette a {
+		font-size: 12px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	  }
 }
 
 
@@ -1207,6 +1252,8 @@ ul.portfolio li.active {
 	  
      .button-style:before {
           display: none;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
 	   }
 	
 }
