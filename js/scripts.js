@@ -113,6 +113,12 @@
 				
 				cDown = countDown;
 				//document.getElementById("remain").innerHTML = (countDown);
+				
+				var hb = $('body').height();
+				var hl = $("#home-lorde").height();
+				var hf = $("#footer-lorde").height();
+			
+			document.getElementById("home-lorde").style.height = hb-(hf+hl) + "px";
 				}
 			}
 		
@@ -121,7 +127,7 @@
         /* Typed.js */		
 		$(window).load(function(){
         $(".typing").typed({
-            strings: [cDown + " days left"],
+            strings: [cDown + " days to go"],
             typeSpeed: 250
           });
          });

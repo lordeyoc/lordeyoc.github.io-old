@@ -238,7 +238,7 @@ fieldset {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url(http://buzzbands.s3.amazonaws.com/wp-content/uploads/2017/04/17134405/lorde-rogerho-1.jpg);
+    background: url(../images/lorde.jpg);
 	background-size: cover;
     z-index: 999;
     -webkit-transition: all .75s ease;
@@ -335,16 +335,23 @@ body.loaded #preloader{
     height: 100%;
 }
 
-.home-section-background {
-    position: relative;
+body {
+	position: relative;
     height: 100%;
     /* background: url(../images/bg/perfect_places.jpg); */
-	background-image: url(http://buzzbands.s3.amazonaws.com/wp-content/uploads/2017/04/17134405/lorde-rogerho-1.jpg);
-    background-size: cover;
-	background-position:center top;
-    background-repeat: no-repeat;
-	margin:-50px auto 0 auto;
+	background: url(../images/lorde-body.jpg) no-repeat;
+    -webkit-background-size:cover !important;
+	-moz-background-size:cover !important;
+	background-size:cover !important;
+	-o-background-size:cover !important;
+	background-attachment: fixed !important;
+	background-position:center top !important;
+	/* margin:-50px auto 0 auto; */
     z-index: 1;
+}
+
+.home-section-background {
+	position: relative;
 }
 
 .home-section-background:after {
@@ -1041,9 +1048,10 @@ ul.portfolio li.active {
 /* Footer */
 
 .footer-section {
-    background: #000;
-    padding: 25px 0px;
+	padding: 10px 0px;
     color: #f8f8f8;
+    background: rgba(0, 0, 0, .8);
+	box-shadow: 0px -15px 5px rgba(0, 0, 0, .3);
 }
 
 .footer-section p {
@@ -1566,8 +1574,8 @@ ul.portfolio li.active {
 }
 
 .rosette {
-	padding-top: 25px;
-	background: #000;
+	padding: 25px;
+    background: rgba(0, 0, 0, .71);
 }
 
 .display-table-rosette {
