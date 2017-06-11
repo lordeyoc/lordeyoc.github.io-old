@@ -380,6 +380,11 @@ body {
     vertical-align: middle;
 }
 
+.header-text .typing {
+	border-top: solid 2px white;
+	border-bottom: solid 2px white;
+}
+
 .header-text p {
 	display: inline;
 	-webkit-transition: border-color .15s ease-out,color .15s ease-out;
@@ -398,7 +403,7 @@ body {
     font-size: 50px;
     letter-spacing: .3em;
 	text-transform: uppercase;
-    margin: 0;
+    margin-top: 30px;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 }
@@ -425,9 +430,9 @@ body {
 
 .typed-cursor{
     opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+    -webkit-animation: blink 0.85s infinite;
+    -moz-animation: blink 0.85s infinite;
+    animation: blink 0.85s infinite;
 }
 
 @keyframes blink{

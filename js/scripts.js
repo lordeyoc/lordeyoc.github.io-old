@@ -128,7 +128,7 @@
 		$(window).load(function(){
         $(".typing").typed({
             strings: [cDown + " days to go"],
-            typeSpeed: 250
+            typeSpeed: 200
           });
          });
         
