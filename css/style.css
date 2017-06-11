@@ -353,6 +353,7 @@ body {
 }
 
 .home-section-background {
+	padding-top: 200px;
 	position: relative;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
@@ -383,6 +384,8 @@ body {
 .header-text .typing {
 	border-top: solid 2px white;
 	border-bottom: solid 2px white;
+	white-space: nowrap;
+
 }
 
 .header-text p {
@@ -568,7 +571,7 @@ body {
 .navigation-background {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    background: #000;
+    background: #000 !important;
 }
 
 .navigation-background .logo {
@@ -1078,6 +1081,12 @@ ul.portfolio li.active {
 }
 
 
+	.container-rosette {
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+
+
 /* Responsive */
 
 @media only screen and (min-width: 767px) and (max-width: 991px) {
@@ -1154,7 +1163,6 @@ ul.portfolio li.active {
         background: rgba(0, 0, 0, .9);
     }
     .home-section-background {
-        padding-top: 120px;
 		-webkit-transition: all 0.3s ease-out;
 		transition: all 0.3s ease-out;
     }
@@ -1195,9 +1203,18 @@ ul.portfolio li.active {
     .contact-us-detail {
         margin-bottom: 30px;
     }
+	.container-rosette {
+		margin-top: 45px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
 }
 
 
+	.container-rosette {
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
 @media only screen and (max-width: 555px) {
 	.social-icon li a {
          width: 40px;
