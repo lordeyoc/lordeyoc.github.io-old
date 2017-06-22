@@ -122,7 +122,7 @@
 				}
 			}
 		
-		CountDownFrom(9,26);
+		CountDownFrom(10,17);
 		
         /* Typed.js */		
 		$(window).load(function(){
