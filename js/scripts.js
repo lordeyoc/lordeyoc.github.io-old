@@ -121,8 +121,31 @@
 			document.getElementById("home-lorde").style.height = hb-(hf+hl) + "px";
 				}
 			}
+			
+			var typing_birmingham =  document.getElementById('typing_birmingham');
+			var typing_brighton =  document.getElementById('typing_brighton');
+			var typing_glasgow =  document.getElementById('typing_glasgow');
+			var typing_manchester =  document.getElementById('typing_manchester');
+			var typing_london =  document.getElementById('typing_london');
+			
+			if (typeof(typing_brighton) != 'undefined' && typing_brighton != null)
+			{
+			  CountDownFrom(9,30);
+			} else if (typeof(typing_birmingham) != 'undefined' && typing_birmingham != null)
+			{
+			  CountDownFrom(10,1);
+			} else if (typeof(typing_glasgow) != 'undefined' && typing_glasgow != null)
+			{
+			  CountDownFrom(10,2);
+			} else if (typeof(typing_manchester) != 'undefined' && typing_manchester != null)
+			{
+			  CountDownFrom(9,26);
+			} else if (typeof(typing_london) != 'undefined' && typing_london != null)
+			{
+			  CountDownFrom(9,27);
+			} else 
+				CountDownFrom(10, 17);
 		
-		CountDownFrom(10,17);
 		
         /* Typed.js */		
 		$(window).load(function(){
