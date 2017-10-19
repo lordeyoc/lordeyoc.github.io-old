@@ -150,7 +150,8 @@
         /* Typed.js */		
 		$(window).load(function(){
         $(".typing").typed({
-            strings: [cDown + " days to go"],
+            //strings: [cDown + " days to go"],
+			strings: ["future has came."],
             typeSpeed: 200
           });
          });
