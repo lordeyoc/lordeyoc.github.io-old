@@ -151,7 +151,7 @@
 		$(window).load(function(){
         $(".typing").typed({
             //strings: [cDown + " days to go"],
-			strings: ["future has came."],
+			strings: ["future's come."],
             typeSpeed: 200
           });
          });
